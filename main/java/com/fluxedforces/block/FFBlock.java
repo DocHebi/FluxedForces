@@ -3,6 +3,8 @@
  */
 package com.fluxedforces.block;
 
+import com.fluxedforces.help.FFUtil;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -44,7 +46,7 @@ public abstract class FFBlock extends Block {
 	 */
 	public void setUnlocalizedName(String unlocName)
 	{
-		if(!unlocName.equals("") || unlocName == null)
+		if(FFUtil.isValString(unlocName))
 		m_unlocName = unlocName;
 	}
 	
@@ -62,7 +64,7 @@ public abstract class FFBlock extends Block {
 	 */
 	public void setTextureName(String texName)
 	{
-		if(!texName.equals("") || texName == null)
+		if(FFUtil.isValString(texName))
 			super.setBlockTextureName("fluxedforces:" + texName); m_textureLocation = texName;
 	}
 

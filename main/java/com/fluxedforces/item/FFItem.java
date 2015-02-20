@@ -3,6 +3,8 @@
  */
 package com.fluxedforces.item;
 
+import com.fluxedforces.help.FFUtil;
+
 import net.minecraft.item.Item;
 
 /**
@@ -14,6 +16,13 @@ public class FFItem extends Item {
 	protected FFItem()
 	{
 		super();
+	}
+	
+	public void setTexture(String texName)
+	{
+		if(FFUtil.isValString(texName))
+			super.setTextureName("fluxedforces:" + texName);
+		
 	}
 	
 }

@@ -16,4 +16,9 @@ public class FFUtil {
 		return StatCollector.translateToLocal(unlocName);
 	}
 	
+	public static boolean isValString(String str)
+	{
+		return (!str.equals("") && str != null);
+	}
+	
 }
