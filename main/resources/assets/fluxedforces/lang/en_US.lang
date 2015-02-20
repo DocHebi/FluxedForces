@@ -1,0 +1,25 @@
+item.blueprint.name=Blueprint
+item.rokBroken.name=RepositoryofKnowledge(Broken)
+item.qcore.name=Q-Core
+item.rok.name=RepositoryofKnowledge
+item.woodenCog.name=WoodenCog
+item.assembleTable.name=AssembleTable
+item.analyticalEngine.name=AnalyticalEngine
+item.fabricator.name=Fabricator
+item.punchGen.name=Tree Puncher 3000
+item.gravitationPylon.name=GravitationPlyon
+item.basicFuelGen.name=Basic FuelGenerator
+item.steamBoiler.name=SteamBoiler
+item.aquaCase.name=AquaCase
+item.windCase.name=WindCase
+item.steamCase.name=SteamCase
+item.turbine.name=Turbine
+item.crystal.name=BlankCrystal
+
+tile.gravitonOre.name= GravitonOre
+tile.alphaCore.name= AlphaCore
+
+itemGroup.tabFluxedForces=FluxedForces
+
+
+
