@@ -20,29 +20,23 @@ public class FFRobot extends Entity {
 		super(world);
 	}
 
-	/* (non-Javadoc)
-	 * @see net.minecraft.entity.Entity#entityInit()
-	 */
+	
 	@Override
 	protected void entityInit() {
 		// TODO Auto-generated method stub
 
 	}
 
-	/* (non-Javadoc)
-	 * @see net.minecraft.entity.Entity#readEntityFromNBT(net.minecraft.nbt.NBTTagCompound)
-	 */
+	
 	@Override
-	protected void readEntityFromNBT(NBTTagCompound p_70037_1_) {
+	protected void readEntityFromNBT(NBTTagCompound tag) {
 		// TODO Auto-generated method stub
 
 	}
 
-	/* (non-Javadoc)
-	 * @see net.minecraft.entity.Entity#writeEntityToNBT(net.minecraft.nbt.NBTTagCompound)
-	 */
+	
 	@Override
-	protected void writeEntityToNBT(NBTTagCompound p_70014_1_) {
+	protected void writeEntityToNBT(NBTTagCompound tag) {
 		// TODO Auto-generated method stub
 
 	}
