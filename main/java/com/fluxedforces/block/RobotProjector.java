@@ -32,7 +32,7 @@ public class RobotProjector extends FFBlock
 	public int onBlockPlaced(World world, int x, int y, int z, int meta, float f1, float f2, float f3, int i1)
 	{
 		robot = new FFRobot(world);
-		robot.setPosition(x, y + 1, z);
+		robot.setPosition(x + 0.5, y + 1.1, z + 0.5);
 		
 		world.spawnEntityInWorld(robot);
 		

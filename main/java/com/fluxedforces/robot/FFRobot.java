@@ -6,6 +6,7 @@ package com.fluxedforces.robot;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ResourceLocation;
@@ -24,6 +25,18 @@ public class FFRobot extends EntityLiving {
 	 */
 	public FFRobot(World world) {
 		super(world);
+		
+		
+		
+	}
+	
+	public boolean hitByEntity(Entity entity)
+	{
+		if(entity instanceof EntityPlayer)
+		this.setDead();
+			
+		return true;
+		
 	}
 
 
