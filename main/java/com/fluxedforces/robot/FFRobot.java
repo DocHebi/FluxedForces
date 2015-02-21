@@ -23,21 +23,18 @@ public class FFRobot extends Entity {
 	
 	@Override
 	protected void entityInit() {
-		// TODO Auto-generated method stub
 
 	}
 
 	
 	@Override
 	protected void readEntityFromNBT(NBTTagCompound tag) {
-		// TODO Auto-generated method stub
 
 	}
 
 	
 	@Override
 	protected void writeEntityToNBT(NBTTagCompound tag) {
-		// TODO Auto-generated method stub
 
 	}
 

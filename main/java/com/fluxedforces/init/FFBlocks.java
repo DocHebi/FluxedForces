@@ -10,5 +10,10 @@ public class FFBlocks{
 	public static boolean init() {
 		return false;
 	}
+	
+	public static void registerBlocks()
+	{
+		
+	}
 
 }

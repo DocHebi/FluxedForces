@@ -13,16 +13,18 @@ import net.minecraft.item.Item;
  */
 public class FFItem extends Item {
 
-	protected FFItem()
+	
+	protected FFItem(String unlocName)
 	{
 		super();
+		setUnlocalizedName("fluxedforces." + unlocName);
 	}
 	
 	public void setTexture(String texName)
 	{
 		if(FFUtil.isValString(texName))
 			super.setTextureName("fluxedforces:" + texName);
-		
 	}
+	
 	
 }
