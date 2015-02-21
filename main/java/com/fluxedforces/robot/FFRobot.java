@@ -38,6 +38,14 @@ public class FFRobot extends EntityLiving {
 		return true;
 		
 	}
+	
+	public void onEntityUpdate()
+	{
+		super.onEntityUpdate();
+		
+		if(this.isDead)
+			this.worldObj.removeEntity(this);
+	}
 
 
 
