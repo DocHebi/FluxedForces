@@ -42,7 +42,6 @@ public class RobotProjector extends FFBlock
 	@Override
 	public void onBlockPreDestroy(World world, int x, int y, int z, int meta)
 	{
-		world.removeEntity(robot);
 	}
 
 }
