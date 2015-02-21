@@ -24,7 +24,9 @@ public class ROK extends FFEnergyItem {
 	
 	public ROK()
 	{
-		super("rok");
+		super(30000, 1000, 1000);
+		
+		super.setUnlocalizedName("fluxedforces.rok");
 		
 		this.setHasSubtypes(true);
 	}
@@ -45,7 +47,7 @@ public class ROK extends FFEnergyItem {
 	        case 4:
 	        	return m_iconOn;
 	        default:
-	        	return m_iconOff;
+	        	return m_iconOn;
 	        }
 	    }
 	
