@@ -5,6 +5,7 @@ import com.fluxedforces.init.FFBlocks;
 import com.fluxedforces.init.FFItems;
 import com.fluxedforces.init.FFTabs;
 import com.fluxedforces.recipe.FFRecipes;
+import com.fluxedforces.robot.FFRobot;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -12,6 +13,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLInterModComms.IMCEvent;
 import cpw.mods.fml.common.event.FMLInterModComms.IMCMessage;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.EntityRegistry;
 
 /**
  * @author tim4242, kaigan54, TheCrimsonSpark
@@ -37,6 +39,7 @@ public class FluxedForces {
 		FFItems.registerItems();
 		FFBlocks.registerBlocks();
 		
+		EntityRegistry.registerGlobalEntityID(FFRobot.class, "robot", EntityRegistry.findGlobalUniqueEntityId());
 		
 		
 		FFRecipes.init();
