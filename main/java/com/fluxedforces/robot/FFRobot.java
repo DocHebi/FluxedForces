@@ -3,6 +3,7 @@
  */
 package com.fluxedforces.robot;
 
+import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
@@ -42,9 +43,7 @@ public class FFRobot extends EntityLiving {
 	public void onEntityUpdate()
 	{
 		super.onEntityUpdate();
-		
-		if(this.isDead)
-			this.worldObj.removeEntity(this);
+		this.setVelocity(0, 0, 0);
 	}
 
 
