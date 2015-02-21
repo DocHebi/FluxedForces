@@ -17,7 +17,7 @@ import net.minecraft.world.World;
  */
 public class FFRobot extends Entity {
 
-	public ResourceLocation m_texture;
+	public ResourceLocation m_texture = new ResourceLocation("fluxedforces:textures/robot/ROB_TEX");
 	
 	/**
 	 * @param world
@@ -30,7 +30,8 @@ public class FFRobot extends Entity {
 	 * @see net.minecraft.entity.Entity#entityInit()
 	 */
 	@Override
-	protected void entityInit() {
+	protected void entityInit() 
+	{
 			
 	}
 
@@ -38,7 +39,8 @@ public class FFRobot extends Entity {
 	 * @see net.minecraft.entity.Entity#readEntityFromNBT(net.minecraft.nbt.NBTTagCompound)
 	 */
 	@Override
-	protected void readEntityFromNBT(NBTTagCompound tag) {
+	protected void readEntityFromNBT(NBTTagCompound tag) 
+	{
 		
 	}
 
@@ -46,7 +48,8 @@ public class FFRobot extends Entity {
 	 * @see net.minecraft.entity.Entity#writeEntityToNBT(net.minecraft.nbt.NBTTagCompound)
 	 */
 	@Override
-	protected void writeEntityToNBT(NBTTagCompound tag) {
+	protected void writeEntityToNBT(NBTTagCompound tag) 
+	{
 		
 	}
 	

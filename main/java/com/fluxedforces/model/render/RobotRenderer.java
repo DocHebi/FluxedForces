@@ -17,8 +17,8 @@ import net.minecraft.util.ResourceLocation;
 public class RobotRenderer extends RendererLivingEntity {
 
 	/**
-	 * @param p_i1261_1_
-	 * @param p_i1261_2_
+	 * @param model
+	 * @param shadow
 	 */
 	public RobotRenderer(ModelBase model, float shadow) 
 	{

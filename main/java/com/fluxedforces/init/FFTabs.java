@@ -23,7 +23,7 @@ public class FFTabs {
 	
 	public static boolean init()
 	{
-		m_mainTab = INSTANCE.new FFTab("main", Items.cake);
+		m_mainTab = INSTANCE.new FFTab("main", FFItems.ROK);
 		
 		return false;
 	}
