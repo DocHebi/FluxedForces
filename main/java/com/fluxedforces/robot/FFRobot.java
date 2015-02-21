@@ -15,9 +15,9 @@ import net.minecraft.world.World;
  * @author tim4242, kaigan54, TheCrimsonSpark
  *
  */
-public class FFRobot extends Entity {
+public class FFRobot extends EntityLiving {
 
-	public ResourceLocation m_texture = new ResourceLocation("fluxedforces:textures/robot/ROB_TEX");
+	public ResourceLocation m_texture = new ResourceLocation("fluxedforces:textures/robot/ROB_TEX.png");
 	
 	/**
 	 * @param world
@@ -26,37 +26,6 @@ public class FFRobot extends Entity {
 		super(world);
 	}
 
-	/* (non-Javadoc)
-	 * @see net.minecraft.entity.Entity#entityInit()
-	 */
-	@Override
-	protected void entityInit() 
-	{
-			
-	}
-
-	/* (non-Javadoc)
-	 * @see net.minecraft.entity.Entity#readEntityFromNBT(net.minecraft.nbt.NBTTagCompound)
-	 */
-	@Override
-	protected void readEntityFromNBT(NBTTagCompound tag) 
-	{
-		
-	}
-
-	/* (non-Javadoc)
-	 * @see net.minecraft.entity.Entity#writeEntityToNBT(net.minecraft.nbt.NBTTagCompound)
-	 */
-	@Override
-	protected void writeEntityToNBT(NBTTagCompound tag) 
-	{
-		
-	}
-	
-	 public void onUpdate()
-	 {
-	        this.onEntityUpdate();
-	 }
 
 
 
