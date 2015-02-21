@@ -4,9 +4,11 @@ import com.fluxedforces.help.References;
 import com.fluxedforces.init.FFBlocks;
 import com.fluxedforces.init.FFItems;
 import com.fluxedforces.init.FFTabs;
+import com.fluxedforces.model.render.RobotRenderer;
 import com.fluxedforces.recipe.FFRecipes;
 import com.fluxedforces.robot.FFRobot;
 
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -25,6 +27,7 @@ public class FluxedForces {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		RenderingRegistry.registerEntityRenderingHandler(FFRobot.class, new RobotRenderer());
 		
 		FFItems.init();
 		FFBlocks.init();
@@ -40,6 +43,7 @@ public class FluxedForces {
 		FFBlocks.registerBlocks();
 		
 		EntityRegistry.registerGlobalEntityID(FFRobot.class, "robot", EntityRegistry.findGlobalUniqueEntityId());
+		
 		
 		
 		FFRecipes.init();

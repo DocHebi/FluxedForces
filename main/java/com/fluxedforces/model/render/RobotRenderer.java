@@ -3,6 +3,7 @@
  */
 package com.fluxedforces.model.render;
 
+import com.fluxedforces.model.RobotModel;
 import com.fluxedforces.robot.FFRobot;
 
 import net.minecraft.client.model.ModelBase;
@@ -20,9 +21,9 @@ public class RobotRenderer extends RendererLivingEntity {
 	 * @param model
 	 * @param shadow
 	 */
-	public RobotRenderer(ModelBase model, float shadow) 
+	public RobotRenderer() 
 	{
-		super(model, shadow);
+		super(new RobotModel(), 0.5f);
 	}
 
 	/* (non-Javadoc)
