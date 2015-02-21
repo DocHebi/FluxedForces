@@ -42,7 +42,7 @@ public class FluxedForces {
 		FFItems.registerItems();
 		FFBlocks.registerBlocks();
 		
-		EntityRegistry.registerGlobalEntityID(FFRobot.class, "robot", EntityRegistry.findGlobalUniqueEntityId());
+		EntityRegistry.registerGlobalEntityID(FFRobot.class, "fluxedforces.robot", EntityRegistry.findGlobalUniqueEntityId());
 		
 		
 		

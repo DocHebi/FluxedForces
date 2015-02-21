@@ -7,6 +7,9 @@ tile.alphaCore.name= AlphaCore
 
 
 
+#entitys
+entity.fluxedforces.robot.name=Robot
+
 #tabs
 tab.fluxedforces.main=Fluxed Forces
 
