@@ -1,10 +1,10 @@
+#blocks
+fluxedforces.projector.name=Robot Projector
+
 #items
 item.fluxedforces.rok.name=Repository Of Knowlage
 
 #tile entitys
-tile.gravitonOre.name= GravitonOre
-tile.alphaCore.name= AlphaCore
-
 
 
 #entitys

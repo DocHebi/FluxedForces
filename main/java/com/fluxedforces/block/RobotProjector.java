@@ -26,11 +26,13 @@ public class RobotProjector extends FFBlock
 	 */
 	public RobotProjector()
 	{
-		super("projector", "projector", Material.iron);
+		super("fluxedforces.projector", "projector", Material.iron);
 	}
 	
-	public int onBlockPlaced(World world, int x, int y, int z, int meta, float f1, float f2, float f3, int i1)
+	public int onBlockPlaced(World world, int x, int y, int z, int site, float f1, float f2, float f3, int meta)
 	{
+		super.onBlockPlaced(world, x, y, z, site, f1, f2, f3, meta);
+		
 		robot = new FFRobot(world);
 		robot.setPosition(x + 0.5, y + 2, z + 0.5);
 		
